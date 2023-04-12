@@ -24,7 +24,7 @@ public class Image extends JComponent {
 	public void paintComponent(Graphics g)
 	
 	{
-		if (ugatu==null) return; //отоброжение изображения
+		if (ugatu==null) return; //РѕС‚РѕР±СЂР°Р¶РµРЅРёРµ РёР·РѕР±СЂР°Р¶РµРЅРёСЏ
 		g.drawImage(ugatu, 0, 0, null);
 	}
 	

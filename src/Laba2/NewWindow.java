@@ -8,23 +8,23 @@ public class NewWindow extends AbstractAction{
 
 	public void actionPerformed(ActionEvent e) {
 		
-		JFrame info = new JFrame("Информация");//Создание окна "Информация"
+		JFrame info = new JFrame("РРЅС„РѕСЂРјР°С†РёСЏ");
 		info.setBounds(500,400,300,300);
 		
-		JLabel infoR = new JLabel("Юлия Валерьевна - 816");//Информация о разработчиках в окне
+		JLabel infoR = new JLabel("Р®Р»РёСЏ Р РµСѓС‚РѕРІР° - 816");
 		infoR.setBounds(130, 50, 300, 50);
 		
-		JLabel infoA = new JLabel("Алсу Александровна - 389");
+		JLabel infoA = new JLabel("РђР»СЃСѓ РђС…РјР°РґСѓР»Р»РёРЅР° - 389");
 		infoA.setBounds(130, 90, 300, 50);
 		byte b = (byte) 200;  
 		System.out.print(b);
 	
 		
-		JButton returnToMainButton = new JButton("Назад");
+		JButton returnToMainButton = new JButton("Р’С‹С…РѕРґ");
 		returnToMainButton.setBounds(100,200,200,30);
 		info.add(returnToMainButton);
 		returnToMainButton.addActionListener(m -> {
-			info.dispose(); //разрушение экземпляра info при нажатии внопки назад
+			info.dispose(); //пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ info пїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ
 			
 		});
 		

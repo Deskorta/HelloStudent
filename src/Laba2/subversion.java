@@ -1,9 +1,9 @@
-package Laba2; //пакет Java классов
+package Laba2; //пїЅпїЅпїЅпїЅпїЅ Java пїЅпїЅпїЅпїЅпїЅпїЅпїЅ
 
 import java.awt.event.ActionEvent; 
-import java.awt.event.ActionListener;//библиотека для события слушателя
+import java.awt.event.ActionListener;//пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ
 
-import javax.swing.*; // Библиотека для GUI (построена на основе awt)
+import javax.swing.*; // пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅ GUI (пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ awt)
 
 
 public class subversion {
@@ -12,26 +12,25 @@ public class subversion {
 	public static JPanel main_panel;
 	public static JComboBox editComboBox;
 	public static final String[] items = {
-            "Переместить логотип УГАТУ в верхний правый угол",
-            "Переместить логотип УГАТУ в cередину",
-            "Переместить логотип УГАТУ в левый верхний угол"
+            "РџРµСЂРµРјРµСЃС‚РёС‚СЊ Р»РѕРіРѕС‚РёРї РЈР“РђРўРЈ РІ РІРµСЂС…РЅРёР№ РїСЂР°РІС‹Р№ СѓРіРѕР»",
+            "РџРµСЂРµРјРµСЃС‚РёС‚СЊ Р»РѕРіРѕС‚РёРї РЈР“РђРўРЈ РІ cРµСЂРµРґРёРЅСѓ",
+            "РџРµСЂРµРјРµСЃС‚РёС‚СЊ Р»РѕРіРѕС‚РёРї РЈР“РђРўРЈ РІ Р»РµРІС‹Р№ РІРµСЂС…РЅРёР№ СѓРіРѕР»"
         };
 	
 	
 	public subversion() {
-		JFrame main_GUI = new JFrame("subversion");	// создание графического окна
+		JFrame main_GUI = new JFrame("subversion");
 		main_GUI.setTitle ("Hello!");
 		main_GUI.setBounds(400,400,400,350);
-		main_GUI.setResizable(false); // фиксированный размер окна
-		
+		main_GUI.setResizable(false);
 
-		main_panel = new JPanel(); // Панель - используется для организации компонентов в окне
+		main_panel = new JPanel(); /
 		main_panel.setLayout(null);
 		main_GUI.add(main_panel);
 	
 	
 		NewWindow button_info = new NewWindow();
-		JButton button_inf = new JButton("Информация"); // кнопка отображения информации в другом окне
+		JButton button_inf = new JButton("РРЅС„РѕСЂРјР°С†РёСЏ"); // РєРЅРѕРїРєР° РѕС‚РѕР±СЂР°Р¶РµРЅРёСЏ РёРЅС„РѕСЂРјР°С†РёРё РІ РґСЂСѓРіРѕРј РѕРєРЅРµ
 		button_inf.addActionListener(button_info);
 		button_inf.setBounds(50,200,150,30);
 		main_panel.add(button_inf);
@@ -44,9 +43,9 @@ public class subversion {
 	main_panel.add(editComboBox);
 		
 	
-		JMenu menu = new JMenu("Меню");
-		JMenuItem Logo = new JMenuItem("Отобразить логтип УГАТУ");
-		JMenuItem Exit = new JMenuItem("Выход");
+		JMenu menu = new JMenu("РњРµРЅСЋ");
+		JMenuItem Logo = new JMenuItem("РћС‚РѕР±СЂР°Р·РёС‚СЊ Р»РѕРіС‚РёРї РЈР“РђРўРЈ");
+		JMenuItem Exit = new JMenuItem("Р’С‹С…РѕРґ");
 		ActionListener actionListen = new ListenerButton();
 		Logo.addActionListener(new JMenuTest());
 		Exit.addActionListener(actionListen);
@@ -57,21 +56,21 @@ public class subversion {
 		main_GUI.setJMenuBar(mb);
 		
 	
-		JLabel laba_info = new JLabel("Лабораторная работа №2"); // Отображение текста или изображения
+		JLabel laba_info = new JLabel("Р›Р°Р±РѕСЂР°С‚РѕСЂРЅР°СЏ СЂР°Р±РѕС‚Р° 2"); // пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ
 		laba_info.setBounds(120,0,150,30);
 		main_panel.add(laba_info);
 	
 		
-		JButton button_exit = new JButton("Выход"); // добавляем кнопку
+		JButton button_exit = new JButton("Р’Р«С…РѕРґ"); // пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ
 		button_exit.setBounds(270,200,100,40);
-		ActionListener actionListener = new ListenerButton(); //создаем слушатель
-		button_exit.addActionListener(actionListener); // добавляем слушатель к кнопке
+		ActionListener actionListener = new ListenerButton(); //пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ
+		button_exit.addActionListener(actionListener); // пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅ пїЅпїЅпїЅпїЅпїЅпїЅ
 		main_panel.add(button_exit);
 	
 	
 	main_GUI.setVisible(true);
 	
-	main_GUI.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE); // закрытие окна JFrame и процесса Java
+	main_GUI.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE); // пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅ JFrame пїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ Java
 		}
 	
 	
