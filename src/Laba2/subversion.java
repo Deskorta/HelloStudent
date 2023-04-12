@@ -56,15 +56,15 @@ public class subversion {
 		main_GUI.setJMenuBar(mb);
 		
 	
-		JLabel laba_info = new JLabel("Лабораторная работа 2"); // ����������� ������ ��� �����������
+		JLabel laba_info = new JLabel("Лабораторная работа 2");
 		laba_info.setBounds(120,0,150,30);
 		main_panel.add(laba_info);
 	
 		
-		JButton button_exit = new JButton("ВЫход"); // ��������� ������
+		JButton button_exit = new JButton("ВЫход");
 		button_exit.setBounds(270,200,100,40);
-		ActionListener actionListener = new ListenerButton(); //������� ���������
-		button_exit.addActionListener(actionListener); // ��������� ��������� � ������
+		ActionListener actionListener = new ListenerButton();
+		button_exit.addActionListener(actionListener);
 		main_panel.add(button_exit);
 	
 	

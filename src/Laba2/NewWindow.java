@@ -24,7 +24,7 @@ public class NewWindow extends AbstractAction{
 		returnToMainButton.setBounds(100,200,200,30);
 		info.add(returnToMainButton);
 		returnToMainButton.addActionListener(m -> {
-			info.dispose(); //���������� ���������� info ��� ������� ������ �����
+			info.dispose();  //разрушение экземпляра info при нажатии внопки назад
 			
 		});
 		
